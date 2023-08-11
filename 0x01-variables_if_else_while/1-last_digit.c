@@ -6,6 +6,7 @@
  *main - Entry point
  *
  *Return	:Always 0 (Success)
+ *Description	:a programe that print the last digit of a number
  */
 int main(void)
 {
