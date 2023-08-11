@@ -4,9 +4,10 @@
 
 /**
  *main - Entry point
+ *Description:'a programe that print the last digit of a number'
  *
- *Return	:Always 0 (Success)
- *Description	:a programe that print the last digit of a number
+ *Return:Always 0 (Success)
+ *
  */
 int main(void)
 {
