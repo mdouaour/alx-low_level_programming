@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Return: Always 0 (Success)
+ *Return	:Always 0 (Success)
  */
 int main(void)
 {
@@ -19,7 +19,7 @@ int main(void)
 	}
 	else if ((n % 10) == 0)
 	{
-		 printf("Last digit of %d is %d and is 0\n", n, (n % 10));
+		printf("Last digit of %d is %d and is 0\n", n, (n % 10));
 	}
 	else if (((n % 10) < 6) && ((n % 10) != 0))
 	{
