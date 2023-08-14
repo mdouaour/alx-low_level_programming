@@ -10,13 +10,16 @@ int main(void)
 {
 	int di_git = 48, com_ma = 44, spa_ce = 32;
 
-	while (di_git < 57)
+	while (di_git <= 57)
 	{
 		putchar (di_git);
-		putchar (com_ma);
-		putchar (spa_ce);
+		if (di_git < 57)
+		{
+			putchar (com_ma);
+			putchar (spa_ce);
+		}
 		di_git++;
 	}
-	putchar (57);
+	putchar ('\n');
 	return (0);
 }
