@@ -1,5 +1,5 @@
 #include<unistd.h>
-void	_putchar(char c);
+#include "main.h"
 /**
  *main - Entry point
  *Description:'prints _putchar, followed by a new line'
