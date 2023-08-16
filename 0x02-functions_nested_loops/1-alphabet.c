@@ -1,4 +1,4 @@
-void	 _putchar(char c);
+#include"main.h"
 /**
  *print_alphabet - prints alphabets in lowercase followed by a new line
  *
