@@ -15,7 +15,7 @@ void	rev_string(char *s)
 		i++;
 	}
 	i = 0;
-	while (i <= (len / 2))
+	while (i < (len / 2))
 	{
 		swap = *(s + (len - i - 1));
 		*(s + (len - i - 1)) = *(s + i);
