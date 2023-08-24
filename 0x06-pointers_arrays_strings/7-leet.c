@@ -20,12 +20,8 @@ char	*leet(char *str)
 			if ((str[j] == letters[i]) || (str[j] == (letters[i] - 32)))
 			{
 				str[j] = replace[i];
-				j++;
 			}
-			else
-			{
-				j++;
-			}
+			j++;
 
 		}
 		i++;
