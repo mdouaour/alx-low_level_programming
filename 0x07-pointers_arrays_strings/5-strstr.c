@@ -45,24 +45,31 @@ char	*_strstr(char *haystack, char *needle)
 {
 	int i = 0;
 
-	while (haystack[i] != '\0')
+	if (needle[0] == '\0')
 	{
-		if (haystack[i] == needle[0])
+		return (NULL);
+	}
+	else
+	{
+		while (haystack[i] != '\0')
 		{
-			if (finds((haystack + i), needle))
+			if (haystack[i] == needle[0])
 			{
-				return (haystack + i);
+				if (finds((haystack + i), needle))
+				{
+					return (haystack + i);
+				}
+				else
+				{
+					i++;
+				}
 			}
 			else
 			{
 				i++;
 			}
 		}
-		else
-		{
-			i++;
-		}
-	}
 
-	return (NULL);
+		return (NULL);
+	}
 }
