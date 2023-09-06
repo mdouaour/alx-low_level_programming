@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h"i
 #include <stdlib.h>
 /**
  *alloc_grid - creates a pointer to a 2 dimensional array of integers
@@ -11,7 +11,13 @@
 int	**alloc_grid(int width, int height)
 {
 	int i = 0, j = 0;
-	int **arr = (int **)malloc(height * sizeof(int *));
+	int **arr;
+
+	if ((width <= 0) || (height <= 0))
+	{
+		return (NULL);
+	}
+	arr = (int **)malloc(height * sizeof(int *));
 
 	if (arr == NULL)
 	{
