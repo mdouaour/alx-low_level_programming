@@ -1,4 +1,4 @@
-#include "main.h"i
+#include "main.h"
 #include <stdlib.h>
 /**
  *alloc_grid - creates a pointer to a 2 dimensional array of integers
