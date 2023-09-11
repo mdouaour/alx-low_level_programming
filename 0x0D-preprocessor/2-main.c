@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-#include "_putchar.c"
 /**
  *main - prints the name of the file it was compiled fromm
  *Return:always 0 success
