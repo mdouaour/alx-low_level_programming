@@ -1,5 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
+#ifndef NULL
+#define NULL ((void *)0)
+#endif
 /**
  *struct dog - a new type dog
  *@name:a pointer to string name
