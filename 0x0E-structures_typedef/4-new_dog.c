@@ -2,6 +2,23 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
+ *str_cpy - copy a string from src to dest
+ *@dest:a pointer to string dest
+ *@src:a pointer to string src
+ *
+ */
+void	str_cpy(char *dest, char *src)
+{
+	int i = 0;
+
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+}
+/**
  *len - calculate the length of a string
  *@s:the input string
  *Return:an int that is the length
@@ -28,7 +45,7 @@ int	len(char *s)
  */
 dog_t	*new_dog(char *name, float age, char *owner)
 {
-	int l = 0, i = 0;
+	int l = 0;
 	char *n, *o;
 	dog_t *dog;
 
@@ -41,27 +58,19 @@ dog_t	*new_dog(char *name, float age, char *owner)
 	n = (char *)malloc(sizeof(char) * l + 1);
 	if (n == NULL)
 	{
+		free(dog);
 		return (NULL);
 	}
-	while (name[i] != '\0')
-	{
-		n[i] = name[i];
-		i++;
-	}
-	n[i] = '\0';
-	i = 0;
+	str_cpy(n, name);
 	l = len(owner);
 	o = (char *)malloc(sizeof(char) * l + 1);
 	if (o == NULL)
 	{
+		free(dog);
+		free(n);
 		return (NULL);
 	}
-	while (owner[i] != '\0')
-	{
-		o[i] = owner[i];
-		i++;
-	}
-	o[i] = '\0';
+	str_cpy(o, owner);
 	(*dog).name = n;
 	(*dog).age = age;
 	(*dog).owner = o;
