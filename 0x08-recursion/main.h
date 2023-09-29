@@ -10,4 +10,10 @@ int	_sqrt_recursion(int n);
 int	root(int n, int r);
 int	is_prime_number(int n);
 int	deviders(int n, int d);
+int	is_palindrome(char *s);
+int	compare(int l, int l2, char *s1, char *s2);
+int	_length(char *s);
+#ifndef NULL
+#define NULL (void *)0
+#endif
 #endif
