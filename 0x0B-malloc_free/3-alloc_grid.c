@@ -11,7 +11,7 @@
  */
 int	**alloc_grid(int width, int height)
 {
-	int i = 0;
+	int i = 0, j;
 	int **matrix;
 
 	if ((width <= 0) || (height <= 0))
@@ -36,30 +36,11 @@ int	**alloc_grid(int width, int height)
 			free(matrix);
 			return (NULL);
 		}
-		i++;
-	}
-	initialize(matrix, width, height);
-	return (matrix);
-}
-/**
- *initialize - initialize a 2d array of integers with 0
- *@m:a pointer to the array
- *@w:the wedith
- *@h:the height
- *
- */
-void	initialize(int **m, int w, int h)
-{
-	int i = 0, j = 0;
-
-	while (i < w)
-	{
-		j = 0;
-		while (j < h)
+		for (j = 0; j < width; j++)
 		{
-			m[i][j] = 0;
-			j++;
+			matrix[i][j] = 0;
 		}
 		i++;
 	}
+	return (matrix);
 }
