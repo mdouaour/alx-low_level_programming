@@ -7,7 +7,7 @@
  *
  *
  */
-int	main()
+int	main(void)
 {
 	int i = 0;
 
