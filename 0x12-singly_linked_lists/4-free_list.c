@@ -1,8 +1,8 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- *
- *
+ *free_list - frees a lis
+ *@head:a pointer to a linked list
  *
  *
  *
